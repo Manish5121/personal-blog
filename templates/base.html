@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    {% if page.title %}
+    <title>{{ page.title}}</title>
+    {% else %}
+    <title>Manish's Personal Website</title>
+    {% endif %}
+    <link href="/css/style.css" rel="stylesheet"/>
+  </head>
+
+  <body>
+    <h1 id="mg"> Manish Gambhirrao </h1>  
+    <hr>
+    <nav>
+	<a href="/">About</a>
+	<a href="/blog">Thoughts</a>
+    </nav>
+    <hr>
+    <br>
+    <section class="section">
+      <div class="container">{% block content %} {% endblock %}</div>
+    </section>
+   
+    <footer><hr>
+	    &copy manishgambhirrao.xyz copyright 2023-2024 </footer>
+  </body>
+</html>
