@@ -7,25 +7,27 @@
     {% else %}
     <title>Manish's Personal Website</title>
     {% endif %}
-    <link rel="icon" type="image/x-icon" href="images/profile.jpg">
-    <link href="/css/style.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="images/profile.jpg" />
+    <link href="/css/style.css" rel="stylesheet" />
   </head>
 
   <body>
-    
-	    <h1 id="mg"> Manish Gambhirrao </h1> 
-    <hr>
-    <nav>
-	<a href="/">About</a>
-	<a href="/blog">Thoughts</a>
-    </nav>
-    <hr>
-    <br>
-    <section class="section">
-      <div class="container">{% block content %} {% endblock %}</div>
-    </section>
-   
-    <footer><hr>
-	    &copy manishgambhirrao.xyz copyright 2023-2024 </footer>
+    <div id="main">
+      <h1 id="mg">Manish Gambhirrao</h1>
+
+      <nav>
+        <a href="/">About</a>
+        <a href="/blog">Thoughts</a>
+      </nav>
+
+      <section class="section">
+        <div class="container">{% block content %} {% endblock %}</div>
+      </section>
+
+      <!-- <footer>
+        <hr />
+        &copy manishgambhirrao.xyz copyright 2023-2024
+      </footer> -->
+    </div>
   </body>
 </html>

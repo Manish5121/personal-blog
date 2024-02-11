@@ -1,75 +1,87 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Spline+Sans+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Spline+Sans+Mono&display=swap");
 
-*{
-   box-sizing: border-box;
-  /* background-color: #09090B;*/
- }
-
-body{
-       	color:white;
-        font-family: "Inter", sans-serif;
-	font-size: 20px;
-	background-color:#0d0d0d;
-	margin: auto;
-        padding: 20px;
-        max-width: 900px;
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.863);
+  background-color: #0d0d0d;
+  color-scheme: dark;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: auto;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 700px;
+  min-height: 100vh;
+  padding: 1rem;
+}
 
 #mg {
-   font-family: 'Cormorant Garamond', serif;
-   font-size: 42px;
-   text-decoration: underline 6px orange ;
+  font-family: "Cormorant Garamond", serif;
+  text-decoration: underline 6px orange;
 }
 
-
-nav a{
-   padding: 5px;
-   color: white;
-   text-decoration: none;   
+nav {
+  border-bottom: 1px solid white;
+  display: flex;
+  gap: 1em;
+  padding-bottom: 3px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
 }
 
-a{
-	color: white;
-	text-decoration: underline  3px orange;
+a {
+  color: white;
+  text-decoration: underline 3px orange;
 }
 
-nav a:active{
-    opacity: 0.5;
-}	
+nav a:active {
+  opacity: 0.5;
+}
 
-hr{
-  opacity: 0.5;	
+hr {
+  opacity: 0.5;
 }
 
 #room {
   height: 350px;
   width: 100%;
-  object-fit: cover;  
+  object-fit: cover;
 }
 
-
-span{
-  color : orange;
+span {
+  color: orange;
 }
 
+/* @media screen and (min-width: 480px) {
 
-
-@media screen and (min-width:480px)  {
   body {
-       font-size: 35px;
-       padding: 1%;
- }
-					    
- #mg{
- font-size: 90px;
- }							
+    font-size: px;
+    padding: 1%;
+  }
+
+  #mg {
+    font-size: 90px;
+  }
 }
 
-@media screen and (min-width: 992px){
-    body{
-     font-size: 22px;
-    }
-
- }							
+@media screen and (min-width: 992px) {
+  body {
+    font-size: 18px;
+  }
+} */
